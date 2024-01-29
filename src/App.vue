@@ -1,17 +1,13 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <ConnectionManager> </ConnectionManager>
+  <ConnectionState />
+  <Timers />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import ConnectionManager from "./components/ConnectionManager.vue"
+import ConnectionState from "./components/ConnectionState.vue"
+import Timers from "./components/Timers.vue"
 </script>
 
 <style>
